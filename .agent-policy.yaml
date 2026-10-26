@@ -1,0 +1,7 @@
+# Test manifest for agent-sandbox tests (tests/workflow-gate.sh, tests/policy-matrix.sh).
+# Optional, so sessions without a grant only warn.
+version: 1
+network:
+  - host: example.org
+    reason: "workflow gate: a granted repo rule is reachable read-only"
+    optional: true
